@@ -1,3 +1,20 @@
-// Color
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
+$font-primary : 'Lato',sans-serif;
+$font-secondary : 'Roboto',sans-serif;
+$font-tertiary : 'Montserrat',sans-serif;
 
+// Color
 $color-primary : #02021A;
+
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+
+$color-grey-dark: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+
+$color-white: #fff;
+$color-black: #000;
+
