@@ -1,0 +1,16 @@
+@keyframes scaleUP {
+    0% {
+        color: rgba($color: $color-white, $alpha: 0);
+       transform: scaleY(0.3) scaleX(0.3) translateY(2.2vw);
+    }
+
+    50%{
+        color: rgba($color: $color-white, $alpha: 0.1);
+        transform: scaleY(1) scaleX(1) translateY(2.2vw);
+    }
+    
+    100% {
+        transform: scaleY(1.8) translateY(2.2vw);
+        color: rgba($color: $color-white, $alpha: 0.1); 
+    }
+}

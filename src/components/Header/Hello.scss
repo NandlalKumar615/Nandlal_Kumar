@@ -1,0 +1,39 @@
+@import '../Abstracts/Variables.scss';
+@import '../Abstracts/Animations.scss';
+
+.welcome_screen{
+    grid-column: 5/-1;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: $header-height 1fr;
+    // align-items: center;
+    // justify-content: center;
+    // background-color: red;
+
+    &-hello{
+        // background-color: red;
+        // width: 6vw;
+        // height: 100%;
+        // font-size: 20vw;
+        // transform: scaleX()
+        grid-row: 2/-1;
+        width: min-content;
+        line-height: 1;
+        letter-spacing: 1vw;
+        font-family: $font-bold-curve;
+        font-weight: 700;
+        font-size: 23vw;
+        // height: fit-content;
+        // color: rgba($color: $color-white, $alpha: 0.1);
+        // transform: scaleY(1.8) translateY(2.2vw);
+        // margin: auto auto;
+        align-self: center;
+        justify-self: center;
+        animation-name: scaleUP;
+        animation-duration: 1.2s; //
+        animation-timing-function: ease-out; 
+        animation-fill-mode: forwards;
+        
+    }
+}
