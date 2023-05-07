@@ -4,6 +4,7 @@ import './index.scss';
 import App from './App';
 
 import 'https://unpkg.com/boxicons@2.1.4/dist/boxicons.js';
+{/* <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'></link> */}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

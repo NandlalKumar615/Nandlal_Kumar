@@ -9,6 +9,7 @@
 
     &_Title{
         grid-column: 1/-1;
+        grid-row: 1/2;
         justify-self: center;
         font-family: $font-secondary;
         font-size: $Title;
@@ -37,33 +38,114 @@
             // display: flex;
             position: relative;
             // background-color: red;
-
+            width: 360px;
+            height: 100px;
         }
 
-        &-sml{
+        &_All{
             display: flex;
             // background-color: aqua;
             z-index: 10;
             position: absolute;
             top : 0;
             left : 0;
-            width: 30rem;
-            height: 10rem;
+            width: 360px;
+            height: 100px;
             justify-content: space-around;
             align-items: center;
             // justify-items: center;
 
-            & p{
-                color: black;
-                font-size: 3rem;
-                font-family: $font-secondary;
-                font-weight: 700;
+            & button{
+                // color: $color-secondary;
+                // font-size: 16px;
+                // font-family: $font-secondary;
+                // font-weight: 700;
+                background-color: transparent;
+                // border: none;
+                border-style: solid;
+                border-width: 3px;
+                border-color: #ff4d00a9;
+                width: 28px;
+                height:  28px;
+                // text-align: center;
+                z-index: 10;
+                // text-shadow:2rem;
+                cursor: pointer;
+                border-radius: 20px;
+                display: grid;
+                justify-content: center;
+                align-content: center;
+                // margin: auto auto;
+
+                // & span{
+                //     background-color: transparent;
+                // }
             }
         }
-
-        &-blur{
-            width: 20px;
+        &-B{
+            background-color: $color-secondary;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+        }
+        &-C{
+            background-color: $color-secondary;
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+        }
+        &-D{
+            background-color: $color-secondary;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
         }
 
+        &-name{
+            display: flex;
+            justify-content: space-around;
+            transform: translateY(-14px);
+            // position: absolute;
+            & span{
+                width: 80px;
+                text-align: center;
+                font-size: 1.3rem;
+                // background-color: red;
+            }
+        }
+    }
+
+    
+    &_Resume-Details{
+        grid-column: 1/-1;
+        grid-row: 3/4;
+        align-content: start;
+        // background-color: palegreen;
+        display: grid;
+        grid-template-columns: repeat(3,1fr) 6fr repeat(3,1fr);
+    }
+    
+    &_Resume{
+        // background-color: red;
+        // width: 60px;
+        grid-column: 2/3;
+        align-self: center;
+        // margin-bottom: 8rem;
+        // margin-top: 3rem;
+        justify-self: center;
+        // display: block;
+        // margin: auto;
+        // display: grid;
+        // justify-content: center;  
+    }
+
+    &_details{
+        grid-column: 4/5;
+        background: linear-gradient(to bottom right,$color-primary-light,$color-primary);
+        padding: 15px;
+        border-radius: 15px;
+        margin-top: 7rem;
+        margin-bottom: 10rem;
+        // background-color: red;
     }
 }
