@@ -4,9 +4,12 @@ import './Hello.scss';
 
 const Hello=()=>{
     return(
-        <div className='welcome_screen'>
-            <p className='welcome_screen-hello'>Hello</p>
-
+        <div className='welcomeScreen'>
+            <p className='welcomeScreen-Hello'>Hello</p>
+            {/* <div className='welcomeScreen-Container'>
+                <p className='welcomeScreen-Iam'>I'm a</p>
+                <p className='welcomeScreen-Skill'>Web Developer</p>
+            </div> */}
         </div>
     );
 }

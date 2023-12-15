@@ -1,0 +1,54 @@
+@import '../Abstracts/Variables.scss';
+@import '../Abstracts/Mixins.scss';
+
+.selectedCertificate{
+    // width: 40vw;
+    max-height: 80vh;
+    max-width: 90vw;
+    border-radius: 50px;
+    border-color: $color-secondary-light;
+    border-width: 0.4rem;
+    border-style:solid;
+    padding: 7px;
+
+    &-Container{
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: 20;
+        // background-color: blue;
+    }
+
+    &-Buttons{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 1.3rem;
+        font-family: $font-tertiary;
+        font-weight: 600;
+        font-size: 1.2rem;
+        // justify-content: space-around;
+        
+        &_1{
+            @include button-styles;
+            grid-column: 1/2;
+            width: 15rem;
+            justify-self: center;
+            text-align: center;
+            // margin: 3px;
+            background: $orange-gradient-left;
+        }
+        &_2{
+            @include button-styles;
+            grid-column: 2/3;
+            width: 15rem;
+            justify-self: center;
+            text-align: center;
+            // margin: 3px;
+            background: $orange-gradient-left;
+            
+        }
+
+    }
+}

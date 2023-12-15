@@ -1,3 +1,5 @@
+@import './Variables.scss';
+
 @keyframes scaleUP {
     0% {
         color: rgba($color: $color-white, $alpha: 0);
@@ -14,3 +16,45 @@
         color: rgba($color: $color-white, $alpha: 0.1); 
     }
 }
+
+
+@keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(-7rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+@keyframes slide-NavLinks {
+    0% {
+      opacity: 0;
+      transform: translate(-80%,-50%);
+    }
+    30% {
+      opacity: 0;
+      transform: translate(-80%,-50%);
+    }
+    90% {
+      opacity: 1;
+      transform: translate(-45%,-50%);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(-50%,-50%);
+    }
+}
+
+
+// @keyframes rotate-animation{
+//     from {
+//         background: conic-gradient($color-secondary-light,$color-secondary,$color-secondary 60%,$color-primary 60%,$color-primary);
+//     }
+
+//     to {
+//         background: conic-gradient($color-secondary-light,$color-secondary,$color-secondary 90%,$color-primary 90%,$color-primary);
+//     }
+// }

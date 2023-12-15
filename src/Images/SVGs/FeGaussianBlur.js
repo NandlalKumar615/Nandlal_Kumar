@@ -10,7 +10,7 @@ const FeGaussianBlur = (props) => {
     useEffect(() => {
         const el = animateCircle.current;
         const tl = gsap.timeline();
-
+    
         tl.to(el, { scaleX: 1.3, scaleY: 0.7, duration: 0.2 })
             .to(el, { x: chose, duration: 0.7, ease: "expo" })
             .to(el, { scale: 1, duration: 0.2 })

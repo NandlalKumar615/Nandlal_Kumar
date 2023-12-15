@@ -1,4 +1,5 @@
 @import "./components/abstracts/variables";
+@import "./components/abstracts/Mixins.scss";
 
 * {
   box-sizing: border-box;
@@ -8,12 +9,15 @@
 
 html {
   font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+  @include respond(phone){
+    font-size: 57%;
+  }
 }
 
 
 body {
   background-color: $color-primary;
-  margin: 0 2rem;
+  // margin: 0 2rem;
   font-family: $font-primary;
   color: $color-grey-light-1;
   font-weight: 400;

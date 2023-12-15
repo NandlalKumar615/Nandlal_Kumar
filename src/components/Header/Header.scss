@@ -1,5 +1,33 @@
+@import '../Abstracts/Variables.scss';
+@import '../Abstracts/Mixins.scss';
+
+
 .header{
     grid-column: 1 / -1;
+    grid-row: 1/2;
     display: grid;
-    grid-template-columns: repeat(12,1fr);
+    // grid-template-columns: repeat(12,1fr);
+    grid-template-rows: $header-height 1fr $footer-height;
+
+    &-Container{
+        grid-row: 2/3;
+        display: flex;
+
+        @include respond(phone){
+            flex-direction: column;
+        }
+        // background-color: greenyellow;
+    }
+
+    &-My-Name{
+        grid-row: 1/2;
+        // justify-self: center;
+        // margin-top: auto;
+        align-self:flex-end;
+        margin-left: 20%;
+        font-family: $font-secondary;
+        letter-spacing: 2px;
+    }
+
+
 }

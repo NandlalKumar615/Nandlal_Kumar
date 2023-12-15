@@ -1,9 +1,9 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@700&family=Comfortaa:wght@300;400;700&family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
 
-$font-primary : 'Lato',sans-serif;
-$font-secondary : 'Roboto',sans-serif;
-$font-tertiary : 'Montserrat',sans-serif;
+$font-primary : 'Lato',sans-serif; //default
+$font-secondary : 'Roboto',sans-serif; //Title, 
+$font-tertiary : 'Montserrat',sans-serif; //Other
 $font-curve : 'Comfortaa',sans-serif;
 $font-bold-curve : 'Alkatra', sans-serif;
 
@@ -13,10 +13,10 @@ $Title : 4rem;
 
 
 // Color
-$color-primary : #02021A;
+$color-primary : rgb(2, 2, 26);
 $color-primary-light : #1E2248;
-$color-secondary : #ff4e00;
-$color-secondary-light : rgb(236, 159, 5);
+$color-secondary : rgb(255, 78, 0);
+$color-secondary-light : rgb(235, 158, 5);
 $color-tertiary : #8BF5FA;
 
 
@@ -33,6 +33,22 @@ $color-white: #fff;
 $color-black: #000;
 
 
+// Gradient
+$blue-gradient-right: linear-gradient(to bottom right,$color-primary-light,$color-primary);
+$blue-gradient-left: linear-gradient(to bottom left,$color-primary-light,$color-primary);
+
+$orange-gradient-right: linear-gradient(to right, $color-secondary-light, $color-secondary);
+$orange-gradient-left: linear-gradient(to left, $color-secondary-light, $color-secondary);
+$orange-gradient-bottom-right: linear-gradient(to bottom right, $color-secondary-light, $color-secondary);
+
+
 // Magnitude
 $header-height:10rem;
+$footer-height:10rem;
+
+// Other
+
+$perspective_value:50rem;
+$shadow:0rem 0rem 1.3rem rgba(69, 76, 133, 0.995);
+$border-color_value: rgba(255, 255, 255, 0.15);
 

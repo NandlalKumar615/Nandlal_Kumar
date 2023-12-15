@@ -1,10 +1,17 @@
 @import '../Abstracts/Variables.scss';
+@import '../Abstracts/Mixins.scss';
 
 .languageKnown{
     grid-column: 1/-1;
+    grid-row: 3/4;
     display: grid;
-    grid-template-rows: $header-height repeat(6,1fr) 0.5fr;
-    grid-template-columns: 1fr max-content repeat(3,1fr);
+    grid-template-rows: $header-height repeat(6,1fr) $footer-height;
+    grid-template-columns: 1fr minmax(70rem,70vw) 3fr;
+    @include respond(phone){
+        grid-template-columns: 1fr 93vw 1fr;
+    }
+    background-color: blue;
+    // height: 1vh;
 
     &-Title{
         // background-color: red;

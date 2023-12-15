@@ -4,20 +4,20 @@ import EachLanguage from './EachLanguage';
 
 import './LanguageKnown.scss';
 
-import c_logo from '../SVG/ProgrammingLanguageLogo/c.svg';
-import cpp_logo from '../SVG/ProgrammingLanguageLogo/cpp.svg';
-import javascript_logo from '../SVG/ProgrammingLanguageLogo/javascript.svg';
-import python_logo from '../SVG/ProgrammingLanguageLogo/python.svg';
-import kotlin_logo from '../SVG/ProgrammingLanguageLogo/kotlin.svg';
+import c_logo from '../../Images/SVGs/ProgrammingLanguageLogo/c.svg';
+import cpp_logo from '../../Images/SVGs/ProgrammingLanguageLogo/cpp.svg';
+import javascript_logo from '../../Images/SVGs/ProgrammingLanguageLogo/javascript.svg';
+import python_logo from '../../Images/SVGs/ProgrammingLanguageLogo/python.svg';
+import kotlin_logo from '../../Images/SVGs/ProgrammingLanguageLogo/kotlin.svg';
 
-import p_90 from '../SVG/Percentage/P90.svg';
-import p_80 from '../SVG/Percentage/P80.svg';
-import p_70 from '../SVG/Percentage/P70.svg';
+import p_90 from '../../Images/SVGs/Percentage/P90.svg';
+import p_80 from '../../Images/SVGs/Percentage/P80.svg';
+import p_70 from '../../Images/SVGs/Percentage/P70.svg';
 
 
 const LanguageKnown = () =>{
     return(
-        <div className='languageKnown scroll'>
+        <div id='languageKnownSection' className='languageKnown'>
             <h2 className="languageKnown-Title">Language Known</h2>
             <EachLanguage logo ={c_logo} percentageLogo = {p_90} name = 'C' percentage = {90}></EachLanguage>  
             <EachLanguage logo ={cpp_logo} percentageLogo = {p_90} name = 'C++' percentage = {90}></EachLanguage>

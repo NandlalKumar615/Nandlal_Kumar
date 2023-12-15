@@ -1,15 +1,21 @@
 @import '../Abstracts/Variables.scss';
+@import '../Abstracts/Mixins.scss';
 
 .eachLanguage{
     // background-color: red;
     grid-column: 2/3;
-    width: 85rem;
-    display: grid;
-    margin: 1rem;
+    // width: minmax(80%,90%);
+    // min-width: 50rem;
+    // max-width: 70%;
+    width: 100%;
+    margin: 1rem 0rem;
     height: 80%;
+    display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: max-content 1fr;
     position: relative;
+
+    // z-index: 5;
 
     &-Logo{
         grid-column: 1/2;
@@ -18,11 +24,16 @@
         align-self:center;
         // padding: 10px;
         margin: 0 3rem;
+
+        @include respond(phone){
+            margin: 0 1rem;    
+        }
         // background-color: aqua;
     }
 
     &-Name-Percentage{
         grid-row: 1/2;
+        grid-column: 2/3;
         display: grid;
         grid-template-columns: max-content 1fr;
         // background-color: firebrick;
@@ -38,12 +49,12 @@
 
     &-Percentage{
         // background-color: azure;
-        grid-column: 2/3;
-        grid-row: 1/2;
+        // grid-column: 2/3;
+        // grid-row: 1/2;
         height :3rem;
         // width: 100%;
         // width:200px;
-        align-self: self-end;
+        // align-self: self-end;
         // justify-self: start;
         // justify-self: end;
         // justify-self:flex-start;
@@ -51,9 +62,12 @@
         // height: 50%;
         // align-self:self-end;
         position: absolute;
-        left: 0;
+        right: 0;
+        bottom: 0;
+        // top: 0;
         // margin-left: -20;
         // animation-fill-mode: forwards;
+        transform: translate(2rem,-1.5rem);
     }
     
     &-Bar{
@@ -62,8 +76,8 @@
         align-self:self-start;
         border-radius: 100px;
         height: 2rem;
-        width: 70rem;
-        border-color: rgba(255, 255, 255, 0.15);;
+        // width: 70rem;
+        border-color: $border-color_value;
         border-style: solid;
         border-width: 3px;
         // box-shadow: ;
@@ -74,7 +88,8 @@
         &-Fill{
             height: 100%;
             border-radius: 100px;
-            background : linear-gradient(to right, $color-secondary-light, $color-secondary)
+            background : $orange-gradient-right;
+            position: relative;
         }
     }
 
