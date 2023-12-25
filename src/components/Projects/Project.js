@@ -79,7 +79,7 @@ const Projects = (props) => {
                     </div>
                     <div className={classes_backSide_1}>
                         <p className='projects-About'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus obcaecati quaerat maiores itaque ducimus dolorem repellendus maxime molestiae sint laudantium possimus necessitatibus, quis aliquid fuga vitae alias amet vero ullam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis eligendi voluptas animi, dolorum ipsum minus quaerat quis maxime non pariatur.</p>
-                        <a className='projects-Button projects-Button_2' href="#">See Project</a>
+                        <a className='projects-Button projects-Button_2' href="/#">See Project</a>
                         <button className='projects-Button projects-Button_3' onClick={buttonClicked_1}>Flip</button>
                     </div>
                 </div>
@@ -102,7 +102,7 @@ const Projects = (props) => {
                     </div>
                     <div className={classes_backSide_2}>
                         <p className='projects-About'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus obcaecati quaerat maiores itaque ducimus dolorem repellendus maxime molestiae sint laudantium possimus necessitatibus, quis aliquid fuga vitae alias amet vero ullam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis eligendi voluptas animi, dolorum ipsum minus quaerat quis maxime non pariatur.</p>
-                        <a className='projects-Button projects-Button_2' href="#">See Project</a>
+                        <a className='projects-Button projects-Button_2' href="/#">See Project</a>
                         <button className='projects-Button projects-Button_3' onClick={buttonClicked_2}>Flip</button>
                     </div>
                 </div>
@@ -125,7 +125,7 @@ const Projects = (props) => {
                     </div>
                     <div className={classes_backSide_3}>
                         <p className='projects-About'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus obcaecati quaerat maiores itaque ducimus dolorem repellendus maxime molestiae sint laudantium possimus necessitatibus, quis aliquid fuga vitae alias amet vero ullam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis eligendi voluptas animi, dolorum ipsum minus quaerat quis maxime non pariatur.</p>
-                        <a className='projects-Button projects-Button_2' href="#">See Project</a>
+                        <a className='projects-Button projects-Button_2' href="/#">See Project</a>
                         <button className='projects-Button projects-Button_3' onClick={buttonClicked_3}>Flip</button>
                     </div>
                 </div>
