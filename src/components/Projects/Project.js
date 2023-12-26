@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import './Projects.scss'
 
-import projectImage1 from '../../Images/C1.jpg';
+import projectImage1 from '../../Images/css.jpg';
 // import projectImage2 from '../../Images/C2.jpg';
 // import projectImage3 from '../../Images/C3.jpg';
 

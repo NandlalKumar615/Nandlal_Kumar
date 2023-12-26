@@ -43,9 +43,7 @@ function App() {
       <Skills></Skills>
       <Projects></Projects>
       <Certificates onShowLargeCertificate = {showSelectedCertificate}></Certificates>
-      {/* <CertificatesOld></CertificatesOld> */}
       {isLargeCertificate && <SelectedCertificate certificateToShow = {sourceOfImage} imageValue= {passedImage} onHideSelectedCertificate = {hideSelectedCertificate}/>}
-      {/* {isLargeCertificate && <SelectedCertificate/>} */}
       <Footer></Footer>
     </div>
   );

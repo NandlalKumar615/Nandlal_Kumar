@@ -82,9 +82,9 @@ const Footer =()=>{
                 </form>
                 <div className="footer-Connect">
                     <div className="footer-Links">
-                        <span className="footer-Links-Link"><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/nandlalkumar/"><box-icon size='5rem' name='linkedin-square' type='logo' animation='tada' rotate='90' color='#f7f7f7' ></box-icon></a></span>
-                        <span className="footer-Links-Link"><a target="_blank" rel="noopener noreferrer" href="https://github.com/NandlalKumar615/"><box-icon size='5rem' name='github' type='logo' rotate='90' animation='tada' color='#f7f7f7' ></box-icon></a></span>
-                        <span className="footer-Links-Link"><a target="_blank" rel="noopener noreferrer" href="http://www.instagram.com/nand_kr_/"><box-icon size='5rem' name='instagram-alt' type='logo' animation='tada' rotate='90' color='#f7f7f7' ></box-icon></a></span>
+                        <span className="footer-Links-Link"><a href="https://www.linkedin.com/in/nandlalkumar/"><box-icon size='5rem' name='linkedin-square' type='logo' animation='tada' rotate='90' color='#f7f7f7' ></box-icon></a></span>
+                        <span className="footer-Links-Link"><a href="https://github.com/NandlalKumar615/"><box-icon size='5rem' name='github' type='logo' rotate='90' animation='tada' color='#f7f7f7' ></box-icon></a></span>
+                        <span className="footer-Links-Link"><a href="http://www.instagram.com/nand_kr_/"><box-icon size='5rem' name='instagram-alt' type='logo' animation='tada' rotate='90' color='#f7f7f7' ></box-icon></a></span>
                     </div>
                     <div className="footer-GetInTouch">
                         <div><a className="footer-GetInTouch-Method" href="tel:+918051127302"><span><box-icon size='3rem' name='phone-call' type='solid' color='#f7f7f7' ></box-icon></span><span>+91-8051127302</span></a></div>

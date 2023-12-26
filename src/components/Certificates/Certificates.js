@@ -1,11 +1,11 @@
 import React from "react";
 import './Certificates.scss';
 
-import C1 from '../../Images/C1.jpg';
-import C2 from '../../Images/C2.jpg';
-import C3 from '../../Images/C3.jpg';
-import C4 from '../../Images/C4.jpg';
-import C5 from '../../Images/C5.jpg';
+import C1 from '../../Images/css.jpg';
+import C2 from '../../Images/mongodb.jpg';
+import C3 from '../../Images/react.jpg';
+import C4 from '../../Images/nodejs.jpg';
+import C5 from '../../Images/dsa.jpg';
 
 const Certificates = (props) => {
 
