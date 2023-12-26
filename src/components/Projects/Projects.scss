@@ -24,11 +24,18 @@
     &-Cards {
         grid-row: 2/3;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        // gap: 7rem;
+
+
         // align-items: center;
 
         @include respond(phone){
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            // gap: 8rem;
         }
     }
 
@@ -40,6 +47,7 @@
         // background-color: red;
         border-radius: 5rem;
         perspective: $perspective_value;
+        margin: 3rem;
         // margin: 0 20px;
 
         position: relative;

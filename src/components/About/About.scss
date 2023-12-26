@@ -9,7 +9,7 @@
     // grid-template-columns: repeat(3,1fr);
     grid-template-rows: $header-height max-content max-content $footer-height;
     // grid-auto-flow: column;
-    background-color: red;
+    // background-color: red;
     width: 100vw;
 
     &_Title{
@@ -153,13 +153,19 @@
     }
     
     &_Resume{
-        // background-color: red;
-        // width: 60px;
+        // background-color: blue;
+        margin-top: 7rem;
         grid-column: 2/3;
-        align-self: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+
+        // width: 60px;
+        // align-self: center;
         // margin-bottom: 8rem;
         // margin-top: 3rem;
-        justify-self: center;
+        // justify-self: center;
         // display: block;
         // margin: auto;
         // display: grid;

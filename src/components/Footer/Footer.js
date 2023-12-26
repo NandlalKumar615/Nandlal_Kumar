@@ -45,58 +45,6 @@ const Footer =()=>{
     }
 
 
-    // const fetchMoviesHandler = useCallback(async () => {
-    //     setIsLoading(true);
-    //     setError(null);
-    //     try {
-    //       const response = await fetch('https://react-http-6b4a6.firebaseio.com/movies.json');
-    //       if (!response.ok) {
-    //         throw new Error('Something went wrong!');
-    //       }
-    
-    //       const data = await response.json();
-    
-    //       const loadedMovies = [];
-    
-    //       for (const key in data) {
-    //         loadedMovies.push({
-    //           id: key,
-    //           title: data[key].title,
-    //           openingText: data[key].openingText,
-    //           releaseDate: data[key].releaseDate,
-    //         });
-    //       }
-    
-    //       setMovies(loadedMovies);
-    //     } catch (error) {
-    //       setError(error.message);
-    //     }
-    //     setIsLoading(false);
-    //   }, []);
-
-    
-//     const addMessageHandler =  useCallback(async (userMessage) => { 
-//     try{
-//         const response = await fetch('https://portfolio-website-8a07b-default-rtdb.firebaseio.com/userMessages.json', {
-//           method: 'POST',
-//           body: JSON.stringify(userMessage),
-//           headers: {
-//             'Content-Type': 'application/json'
-//           }
-//         });
-
-//         if (!response.ok) {
-//             throw new Error('Something went wrong!');
-//         }else{
-//             setSubmitMessage("Thanks! will connect with you soon")
-//         }
-//     }
-//     catch (error) {
-//         setSubmitMessage(error.message);
-//     }
-//     console.log(submitMessage)
-//   }, [])
-
 
     async function addMessageHandler(userMessage) {
         await fetch('https://portfolio-website-8a07b-default-rtdb.firebaseio.com/userMessages.json', {
@@ -106,31 +54,8 @@ const Footer =()=>{
             'Content-Type': 'application/json'
           }
         });
-
-        // setSubmitMessage("Thanks! will connect with you soon")
-    // try{
-    //     // if (!response.ok) {
-    //     //     throw new Error('Something went wrong!');
-    //     // }else{
-    //     // }
-    // }
-    // catch (error) {
-    //     setSubmitMessage(error.message);
-    // }
-    // console.log(submitMessage)
   }
 
-//   const LinksUpDown = useRef(null);
-//     useEffect(()=>{
-//         const el = LinksUpDown.current;
-//         gsap.fromTo(el,{rotationX:0},{rotationX:-60, duration:3, scrollTrigger:{
-//             trigger:".footer-Links",
-//             start:"top 80%",
-//             end:"bottom 90%",
-//             toggleActions:"restart reset restart reset",
-//             marker:{startColor: "white", endColor: "red", fontSize: "18px", fontWeight: "bold", indent: 20}
-//         }})
-//     })
 
     return(
         <div className="footer">
@@ -162,7 +87,7 @@ const Footer =()=>{
                         <span className="footer-Links-Link"><a target="_blank" rel="noopener noreferrer" href="http://www.instagram.com/nand_kr_/"><box-icon size='5rem' name='instagram-alt' type='logo' animation='tada' rotate='90' color='#f7f7f7' ></box-icon></a></span>
                     </div>
                     <div className="footer-GetInTouch">
-                        <div><a className="footer-GetInTouch-Method" href="tel:+918051127302"><span><box-icon size='3rem' name='phone-call' type='solid' color='#f7f7f7' ></box-icon></span><span>+91 8051127302</span></a></div>
+                        <div><a className="footer-GetInTouch-Method" href="tel:+918051127302"><span><box-icon size='3rem' name='phone-call' type='solid' color='#f7f7f7' ></box-icon></span><span>+91-8051127302</span></a></div>
                         <div><a className="footer-GetInTouch-Method" href="mailto:nandlalkumar615@gmail.com"><span><box-icon size='3rem' name='envelope' color='#f7f7f7' ></box-icon></span><span>nandlalkumar615@gmail.com</span></a></div>
                         <div><a className="footer-GetInTouch-Method" href="https://goo.gl/maps/u7ACrGrUeHgyedky8" ><span><box-icon size='3rem' name='map' type='solid' color='#f7f7f7' ></box-icon></span><span>MNIT Campus, Jaipur-302017</span></a></div>
                     </div>

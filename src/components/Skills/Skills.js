@@ -62,9 +62,14 @@ const Skills = (props) =>{
             default : console.log ("error in idGot");
         }
 
-        setCurrentAngle(finalAngle);
-        setFinalAngle(percentageValue[indexGot]);
+        // setCurrentAngle(finalAngle);
+        // setFinalAngle(percentageValue[indexGot]);
     }
+
+
+    useEffect(()=>{
+        setFinalAngle(percentageValue[indexGot]);
+    },[indexGot,percentageValue])
 
 
     useEffect(()=>{
@@ -79,6 +84,8 @@ const Skills = (props) =>{
             angle=angle+0.2;
             if (angle <= finalAngle) {
               setTimeout(animateGradientMore, 5);
+            }else{
+                setCurrentAngle(finalAngle);
             }
           }
         const animateGradientLess = () => {
@@ -87,6 +94,8 @@ const Skills = (props) =>{
             angle=angle-0.2;
             if (angle >= finalAngle) {
               setTimeout(animateGradientLess, 5);
+            }else{
+                setCurrentAngle(finalAngle);
             }
           }
         

@@ -19,8 +19,8 @@ const LanguageKnown = () =>{
     return(
         <div id='languageKnownSection' className='languageKnown'>
             <h2 className="languageKnown-Title">Language Known</h2>
-            <EachLanguage logo ={c_logo} percentageLogo = {p_90} name = 'C' percentage = {90}></EachLanguage>  
             <EachLanguage logo ={cpp_logo} percentageLogo = {p_90} name = 'C++' percentage = {90}></EachLanguage>
+            <EachLanguage logo ={c_logo} percentageLogo = {p_90} name = 'C' percentage = {90}></EachLanguage>  
             <EachLanguage logo ={javascript_logo} percentageLogo = {p_90} name = 'Javascript' percentage = {90}></EachLanguage>
             <EachLanguage logo ={python_logo} percentageLogo = {p_80} name = 'Python' percentage = {80}></EachLanguage>
             <EachLanguage logo ={kotlin_logo} percentageLogo = {p_70} name = 'Kotlin' percentage = {70}></EachLanguage>
