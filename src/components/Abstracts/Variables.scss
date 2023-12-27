@@ -1,26 +1,21 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@700&family=Comfortaa:wght@300;400;700&family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alkatra:wght@700&family=Comfortaa:wght@300;400;700&family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap");
 
-$font-primary : 'Lato',sans-serif; //default
-$font-secondary : 'Roboto',sans-serif; //Title, 
-$font-tertiary : 'Montserrat',sans-serif; //Other
-$font-curve : 'Comfortaa',sans-serif;
-$font-bold-curve : 'Alkatra', sans-serif;
-
+$font-primary: "Lato", sans-serif; //default
+$font-secondary: "Roboto", sans-serif; //Title,
+$font-tertiary: "Montserrat", sans-serif; //Other
+$font-curve: "Comfortaa", sans-serif;
+$font-bold-curve: "Alkatra", sans-serif;
 
 // Font Size
-$Title : 4rem;
-
+$Title: 4rem;
 
 // Color
-$color-primary : #02021a;
-$color-primary-light : #1E2248;
-$color-secondary : #ff4e00;
-$color-secondary-light : #eb9e05;
-$color-tertiary : #8BF5FA;
-
-
-
+$color-primary: #02021a;
+$color-primary-light: #1e2248;
+$color-secondary: #ff4e00;
+$color-secondary-light: #eb9e05;
+$color-tertiary: #8bf5fa;
 
 $color-grey-light-1: #f7f7f7;
 $color-grey-light-2: #eee;
@@ -32,24 +27,25 @@ $color-grey-dark-3: #333;
 $color-white: #fff;
 $color-black: #000;
 
-
 // Gradient
-$blue-gradient-right: linear-gradient(to bottom right,#1E2248,#02021a);
-$blue-gradient-left: linear-gradient(to bottom left,#1E2248,#02021a);
+$blue-gradient-right: linear-gradient(to bottom right, #1e2248, #02021a);
+$blue-gradient-left: linear-gradient(to bottom left, #1e2248, #02021a);
 
 $orange-gradient-right: linear-gradient(to right, #eb9e05, #ff4e00);
 $orange-gradient-left: linear-gradient(to left, #eb9e05, #ff4e00);
-$orange-gradient-bottom-right: linear-gradient(to bottom right, #eb9e05, #ff4e00);
-
+$orange-gradient-bottom-right: linear-gradient(
+  to bottom right,
+  #eb9e05,
+  #ff4e00
+);
 
 // Magnitude
-$header-height:10rem;
-$footer-height:10rem;
+$header-height: 10rem;
+$footer-height: 10rem;
 
 // Other
 
-$perspective_value:50rem;
-$shadow:0rem 0rem 1.3rem rgba(69, 76, 133, 0.995);
+$perspective_value: 50rem;
+$shadow: 0rem 0rem 1.3rem rgba(69, 76, 133, 0.995);
 $shadow-2: 0rem 0rem 1.8rem rgba(69, 76, 133, 0.995);
 $border-color_value: rgba(255, 255, 255, 0.15);
-

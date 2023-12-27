@@ -1,88 +1,57 @@
-@import '../Abstracts/Variables.scss';
-@import '../Abstracts/Animations.scss';
-@import '../Abstracts/Mixins.scss';
+@import "../Abstracts/Variables.scss";
+@import "../Abstracts/Animations.scss";
+@import "../Abstracts/Mixins.scss";
 
+.navbar {
+  z-index: 3000;
 
-.navbar{
-    // position: fixed;
-    // top: 0;
-    // left: 0;
-    // width: 20rem;
-    // height: 100vh;
+  &-Container {
+    position: fixed;
+    z-index: 500;
+  }
+
+  &-Links {
+    position: fixed;
     z-index: 3000;
-    // background-color: lightpink;
 
-    &-Container{
-        position: fixed;
-        z-index: 500;
-    // background-color: red;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    font-weight: 400;
+
+    animation: slide-NavLinks 0.8s;
+    animation-fill-mode: forwards;
+
+    &-Animation {
+      animation: slide-NavLinks 0.8s;
+      animation-fill-mode: forwards;
     }
-    
-    &-Links{
-        position: fixed;
-        z-index: 3000;
-        // background-color: green;
-        // color: pink;
+  }
 
-        top: 50%;
-        left:50%;
-        display: flex;
-        flex-direction: column;
-        font-size: 3rem;
-        font-weight: 400;
-        // @include respond("tab-port"){
-        //     // font-size: 1.8rem;
-        // }
-
-        // transform: translate(-50%,-50%);
-        animation: slide-NavLinks 0.8s;
-        animation-fill-mode: forwards ;
-        // animation-delay: 0.5s;
-        // justify-content: center;
-        // align-items: center;
-
-        &-Animation{
-            animation: slide-NavLinks 0.8s;
-            animation-fill-mode: forwards ;
-        }
+  &-Link {
+    &:link,
+    &:visited {
+      padding: 1rem 2rem;
+      color: $color-white;
+      text-decoration: none;
+      text-transform: uppercase;
+      background-image: linear-gradient(
+        120deg,
+        transparent 0%,
+        transparent 50%,
+        $color-white 50%
+      );
+      background-size: 230%;
+      transition: all 0.4s;
     }
 
-    &-Link{
-        // background-color: $color-grey-dark-2;
-        // width: 20rem;
-        // height: 5rem;
-        // font-size: 2rem;
-        // margin: 1rem;
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
-        
-
-        &:link,
-        &:visited {
-            // display: inline-block;
-            padding: 1rem 2rem;
-            color: $color-white;
-            text-decoration: none;
-            text-transform: uppercase;
-            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
-            background-size: 230%;
-            transition: all .4s;
-
-
-
-            // span {
-            //     margin-right: 1.5rem;
-            //     display: inline-block;
-            // }
-        }
-        
-        &:hover,
-        &:active {
-            background-position: 100%;
-            color: $color-primary;
-            transform: translateX(1rem);
-        }
+    &:hover,
+    &:active {
+      background-position: 100%;
+      color: $color-primary;
+      transform: translateX(1rem);
     }
-
+  }
 }

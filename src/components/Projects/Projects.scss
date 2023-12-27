@@ -1,239 +1,145 @@
-@import '../Abstracts/Variables.scss';
-@import '../Abstracts/Mixins.scss';
-
+@import "../Abstracts/Variables.scss";
+@import "../Abstracts/Mixins.scss";
 
 .projects {
-    grid-row: 5/6;
+  grid-row: 5/6;
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-rows: $header-height 1fr $footer-height;
+
+  &-Title {
+    grid-row: 1/2;
     grid-column: 1/-1;
-    display: grid;
-    grid-template-rows: $header-height 1fr $footer-height;
-    // grid-template-columns: 1fr;
-    // background-color: $color-grey-dark-2;
+    justify-self: center;
+    font-family: $font-secondary;
+    font-size: $Title;
+    color: $color-tertiary;
+  }
 
+  &-Cards {
+    grid-row: 2/3;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 
-    &-Title {
-        // background-color: red;
-        grid-row: 1/2;
-        grid-column: 1/-1;
-        justify-self: center;
-        font-family: $font-secondary;
-        font-size: $Title;
-        color: $color-tertiary;
+    @include respond(phone) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &-Card {
+    justify-self: center;
+    width: 30rem;
+    height: 45rem;
+
+    border-radius: 5rem;
+    perspective: $perspective_value;
+    margin: 3rem;
+
+    position: relative;
+
+    &_front {
+      width: 100%;
+      height: 100%;
+      background: $blue-gradient-right;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 20;
+      transition: all 1.5s;
+      box-shadow: $shadow;
+      border-radius: 5rem;
     }
 
-    &-Cards {
-        grid-row: 2/3;
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        // gap: 7rem;
-
-
-        // align-items: center;
-
-        @include respond(phone){
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            // gap: 8rem;
-        }
+    &_back {
+      width: 100%;
+      height: 100%;
+      background: $blue-gradient-left;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      transform: rotateY(180deg);
+      transition: all 1.5s;
+      box-shadow: $shadow;
+      border-radius: 5rem;
     }
 
-    &-Card {
-        // grid-row: 2/8;
-        justify-self: center;
-        width: 30rem;
-        height: 45rem;
-        // background-color: red;
-        border-radius: 5rem;
-        perspective: $perspective_value;
-        margin: 3rem;
-        // margin: 0 20px;
-
-        position: relative;
-
-        &_front {
-            width: 100%;
-            height: 100%;
-            background: $blue-gradient-right;
-            overflow: hidden;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 20;
-            transition: all 1.5s;
-            box-shadow: $shadow;
-            border-radius: 5rem;
-        }
-
-        &_back {
-            width: 100%;
-            height: 100%;
-            background: $blue-gradient-left;
-            overflow: hidden;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 10;
-            transform: rotateY(180deg);
-            transition: all 1.5s;
-            box-shadow: $shadow;
-            border-radius: 5rem;
-
-        }
-
-        &_flipBack {
-            z-index: 30;
-            transform: rotateY(360deg);
-        }
-
-        &_flipFront {
-            // z-index: 30;
-            transform: rotateY(180deg);
-        }
-
+    &_flipBack {
+      z-index: 30;
+      transform: rotateY(360deg);
     }
 
+    &_flipFront {
+      transform: rotateY(180deg);
+    }
+  }
 
-    &-Picture {
-        width: 100%;
-        height: 100%;
-        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  &-Picture {
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
-        &-Container {
-            width: 100%;
-            height: 16rem;
-            position: relative;
-            // background-color: red;
-        }
+    &-Container {
+      width: 100%;
+      height: 16rem;
+      position: relative;
+    }
+  }
+
+  &-Heading {
+    background: $orange-gradient-left;
+    font-size: 2.3rem;
+    font-family: $font-tertiary;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+  }
+
+  &-Details {
+    margin: 3rem 4rem;
+
+    & li {
+      list-style: none;
+      text-align: center;
+      font-size: 2rem;
+      padding: 0.6rem;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid rgba($color-grey-light-2, 0.2);
+      }
+    }
+  }
+
+  &-About {
+    margin: 4rem 4rem;
+    font-size: 1.4rem;
+    line-height: 1.7;
+    text-align: center;
+  }
+
+  &-Button {
+    @include button-styles;
+    background: $orange-gradient-left;
+    position: absolute;
+    bottom: 2rem;
+    &_1 {
+      left: 32%;
     }
 
-    &-Heading{
-        background: $orange-gradient-left;
-        font-size: 2.3rem;
-        font-family: $font-tertiary;
-        position: absolute;
-        right: 10px;
-        bottom: 0;
-        // overflow: hidden;
+    &_2 {
+      left: 5rem;
     }
 
-    &-Details{
-        // background-color: red;
-        margin: 3rem 4rem;
-
-        
-        & li{
-            list-style: none;
-            text-align: center;
-            font-size: 2rem;
-            padding: 0.6rem;
-            // boborder: 12px 0;
-
-            &:not(:last-child){
-                border-bottom: 1px solid rgba($color-grey-light-2, 0.2);
-            }
-            // text-decoration: none;
-        }
+    &_3 {
+      right: 5rem;
+      width: 4rem;
+      height: 4rem;
+      padding: 0;
     }
-
-    &-About{
-        margin: 4rem 4rem;
-        font-size: 1.4rem;
-        line-height: 1.7;
-        text-align: center;
-        // background-color: red;
-    }
-
-    &-Button{
-        @include button-styles;
-        background: $orange-gradient-left;
-        position: absolute;
-        bottom: 2rem;
-        &_1{
-            left: 32%;
-            // transform: translateX(-50%);
-            // width: 10rem;
-            // margin: 0 auto;
-            // display: block;
-        }
-        
-        &_2{
-            left: 5rem;
-            // width: 10rem;
-        }
-        
-        &_3{
-            right: 5rem;
-            width: 4rem;
-            height: 4rem;
-            padding: 0;
-        }
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // &-portfolio{
-
-    //     // position: relative;
-
-    //     // &_front{
-    //     //     width: 100%;
-    //     //     height: 100%;
-    //     //     background: $blue-gradient-right;
-    //     //     overflow: hidden;
-    //     //     position: absolute;
-    //     //     top: 0;
-    //     //     left: 0;
-    //     //     z-index: 20;
-    //     //     transition: all 1.5s;
-    //     //     box-shadow: $shadow;
-    //     //     border-radius: 50px;
-    //     // }
-
-    //     // &_back{
-    //     //     width: 100%;
-    //     //     height: 100%;
-    //     //     background: $blue-gradient-left;
-    //     //     overflow: hidden;
-    //     //     position: absolute;
-    //     //     top: 0;
-    //     //     left: 0;
-    //     //     z-index: 10;
-    //     //     transform: rotateY(180deg);
-    //     //     transition: all 1.5s;
-    //     //     box-shadow: $shadow;
-    //     //     border-radius: 50px;
-
-    //     // }
-
-    //     // &_flipBack{
-    //     //     z-index: 30;
-    //     //     transform: rotateY(360deg);
-    //     // }
-    //     // &_flipFront{
-    //     //     // z-index: 30;
-    //     //     transform: rotateY(180deg);
-    //     // }
-    // }
+  }
 }

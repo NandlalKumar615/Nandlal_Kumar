@@ -1,44 +1,35 @@
-@import '../Abstracts/Variables.scss';
-@import '../Abstracts/Mixins.scss';
+@import "../Abstracts/Variables.scss";
+@import "../Abstracts/Mixins.scss";
 
+.header {
+  grid-column: 1 / -1;
+  grid-row: 1/2;
+  display: grid;
 
-.header{
-    grid-column: 1 / -1;
+  grid-template-rows: $header-height 1fr $footer-height;
+  @include respond(phone) {
+    grid-template-rows: ($header-height + 2rem) 1fr $footer-height;
+  }
+
+  &-Container {
+    grid-row: 2/3;
+    display: flex;
+
+    @include respond(phone) {
+      flex-direction: column;
+
+      gap: 7rem;
+    }
+  }
+
+  &-MyName {
     grid-row: 1/2;
-    display: grid;
-    // grid-template-columns: repeat(12,1fr);
-    grid-template-rows: $header-height 1fr $footer-height;
-    @include respond(phone){
-        grid-template-rows: ($header-height+2rem) 1fr $footer-height;
-    }
 
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
 
-    &-Container{
-        grid-row: 2/3;
-        display: flex;
-
-        @include respond(phone){
-            flex-direction: column;
-            // justify-content: space-around;
-            gap: 7rem;
-        }
-        // background-color: greenyellow;
-    }
-
-    &-MyName{
-        grid-row: 1/2;
-        // background-color: red;
-        // justify-self: center;
-        // margin-top: auto;
-        // align-self:flex-end;
-        display: flex;
-        align-items: center;
-        padding-left: 10%;
-        // margin-left: 20%;
-        font-family: $font-secondary;
-        letter-spacing: 2px;
-
-    }
-
-
+    font-family: $font-secondary;
+    letter-spacing: 2px;
+  }
 }
