@@ -55,20 +55,17 @@ const Projects = (props) => {
         <div className="projects-Card">
           <div className={classes_frontSide_1}>
             <div className="projects-Picture-Container">
-              <img
-                className="projects-Picture"
-                src={projectImage1}
-                alt="ProjectImage"
-              />
-              <h4 className="projects-Heading">CP_Schedule</h4>
+              <div className="projects-Picture">
+                Note Sharing cum Social Media App for Programmers
+              </div>
+              <h4 className="projects-Heading">AlgoLog</h4>
             </div>
             <div className="projects-Details">
-              <ul>
-                <li>3 day tours</li>
-                <li>Up to 30 people</li>
-                <li>2 tour guides</li>
-                <li>Sleep in cozy hotels</li>
-              </ul>
+              <div>
+                Developed a MERN full-stack application utilizing MongoDB,
+                Node.js, Express.js, React.js, CSS/Sass, Rest API, and Redux
+                Toolkit.
+              </div>
             </div>
             <button
               className="projects-Button projects-Button_1"
@@ -79,14 +76,15 @@ const Projects = (props) => {
           </div>
           <div className={classes_backSide_1}>
             <p className="projects-About">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus
-              obcaecati quaerat maiores itaque ducimus dolorem repellendus
-              maxime molestiae sint laudantium possimus necessitatibus, quis
-              aliquid fuga vitae alias amet vero ullam. Lorem ipsum dolor sit
-              amet consectetur, adipisicing elit. Debitis eligendi voluptas
-              animi, dolorum ipsum minus quaerat quis maxime non pariatur.
+              I developed AlgoLog, a major project that serves as a note-sharing
+              cum social media web application for programmers. I incorporated
+              features such as note sharing, authentication, password reset,
+              encryption, voting, reviews, various routes, search functionality,
+              CRUD operations, filtering, and error handling with proper status
+              codes. The project includes pages for profiles, an admin
+              dashboard, notes, favorite notes, revision notes, and quizzes.
             </p>
-            <a className="projects-Button projects-Button_2" href="/#">
+            <a className="projects-Button projects-Button_2" href="https://github.com/NandlalKumar615/AlgoLog">
               See Project
             </a>
             <button
@@ -101,20 +99,16 @@ const Projects = (props) => {
         <div className="projects-Card">
           <div className={classes_frontSide_2}>
             <div className="projects-Picture-Container">
-              <img
-                className="projects-Picture"
-                src={projectImage1}
-                alt="ProjectImage"
-              />
-              <h4 className="projects-Heading">CP_Schedule</h4>
+              <div className="projects-Picture">
+                Resume based portfolio website
+              </div>
+              <h4 className="projects-Heading">Portfolio</h4>
             </div>
             <div className="projects-Details">
-              <ul>
-                <li>3 day tours</li>
-                <li>Up to 30 people</li>
-                <li>2 tour guides</li>
-                <li>Sleep in cozy hotels</li>
-              </ul>
+              <div>
+                Showcasing my expertise in front-end development. Using ReactJS,
+                CSS/Sass, JavaScript, and GSAP.
+              </div>
             </div>
             <button
               className="projects-Button projects-Button_1"
@@ -125,14 +119,15 @@ const Projects = (props) => {
           </div>
           <div className={classes_backSide_2}>
             <p className="projects-About">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus
-              obcaecati quaerat maiores itaque ducimus dolorem repellendus
-              maxime molestiae sint laudantium possimus necessitatibus, quis
-              aliquid fuga vitae alias amet vero ullam. Lorem ipsum dolor sit
-              amet consectetur, adipisicing elit. Debitis eligendi voluptas
-              animi, dolorum ipsum minus quaerat quis maxime non pariatur.
+              As part of a minor project, I created this professional web page,
+              Portfolio Website, showcasing my expertise in front-end
+              development. Using ReactJS, CSS/Sass, JavaScript, and GSAP, the
+              website provides a concise overview of my skills and experience
+              detailing the programming languages and technology stacks I am
+              proficient in. Additionally, it provides contact information for
+              connecting with me.
             </p>
-            <a className="projects-Button projects-Button_2" href="/#">
+            <a className="projects-Button projects-Button_2" href="https://github.com/NandlalKumar615/Nandlal_Kumar">
               See Project
             </a>
             <button
@@ -147,20 +142,16 @@ const Projects = (props) => {
         <div className="projects-Card">
           <div className={classes_frontSide_3}>
             <div className="projects-Picture-Container">
-              <img
-                className="projects-Picture"
-                src={projectImage1}
-                alt="ProjectImage"
-              />
+              <div className="projects-Picture">
+                Show upcoming programming contests
+              </div>
               <h4 className="projects-Heading">CP_Schedule</h4>
             </div>
             <div className="projects-Details">
-              <ul>
-                <li>3 day tours</li>
-                <li>Up to 30 people</li>
-                <li>2 tour guides</li>
-                <li>Sleep in cozy hotels</li>
-              </ul>
+              <div>
+                Static website displaying the schedule of upcoming programming
+                contests. Using HTML, CSS, Bootstrap.
+              </div>
             </div>
             <button
               className="projects-Button projects-Button_1"
@@ -171,14 +162,13 @@ const Projects = (props) => {
           </div>
           <div className={classes_backSide_3}>
             <p className="projects-About">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus
-              obcaecati quaerat maiores itaque ducimus dolorem repellendus
-              maxime molestiae sint laudantium possimus necessitatibus, quis
-              aliquid fuga vitae alias amet vero ullam. Lorem ipsum dolor sit
-              amet consectetur, adipisicing elit. Debitis eligendi voluptas
-              animi, dolorum ipsum minus quaerat quis maxime non pariatur.
+              Another minor project, CP-Schedule, is a static website displaying
+              the schedule of upcoming programming contests across various
+              platforms such as Codeforces, CodeChef, etc. Users have the
+              capability to filter contests based on date, platform, and type,
+              distinguishing between long and short contests.
             </p>
-            <a className="projects-Button projects-Button_2" href="/#">
+            <a className="projects-Button projects-Button_2" href="https://nandlalkumar615.github.io/CP-Schedule/">
               See Project
             </a>
             <button

@@ -5,7 +5,7 @@ import "../Abstracts/Variables.scss";
 
 import s_I1 from "../../Images/SVGs/Skills/html.svg";
 import s_I2 from "../../Images/SVGs/Skills/css.svg";
-import s_I3 from "../../Images/SVGs/Skills/sass.svg";
+import s_I3 from "../../Images/SVGs/Skills/mysql.svg";
 import s_I4 from "../../Images/SVGs/ProgrammingLanguageLogo/javascript.svg";
 import s_I5 from "../../Images/SVGs/Skills/bootstrap.svg";
 import s_I6 from "../../Images/SVGs/Skills/mongodb.svg";
@@ -17,7 +17,7 @@ import s_I11 from "../../Images/SVGs/Skills/firebase.svg";
 import s_I12 from "../../Images/SVGs/Skills/git.svg";
 
 const Skills = (props) => {
-  const percentageValue = [90, 90, 90, 80, 90, 80, 70, 80, 70, 70, 70, 80];
+  const percentageValue = [100, 100, 80, 80, 90, 90, 80, 90, 80, 70, 70, 80];
   const imageValue = [
     s_I1,
     s_I2,
@@ -34,8 +34,8 @@ const Skills = (props) => {
   ];
   const skillName = [
     "HTML",
-    "CSS",
-    "SCSS",
+    "CSS/SCSS",
+    "MySQL",
     "JavaScript",
     "Bootstrap",
     "MongoDB",
@@ -165,14 +165,14 @@ const Skills = (props) => {
             className="skills-Select-Skill skills-Select-Skill_2"
             onMouseEnter={setThePercentage}
           >
-            CSS
+            CSS/SCSS
           </div>
           <div
             id="S3"
             className="skills-Select-Skill skills-Select-Skill_3"
             onMouseEnter={setThePercentage}
           >
-            SCSS
+            MySQL
           </div>
           <div
             id="S4"

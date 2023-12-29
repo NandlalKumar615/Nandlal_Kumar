@@ -20,8 +20,8 @@ const EachLanguage = (props) => {
         duration: 3,
         scrollTrigger: {
           trigger: ".languageKnown",
-          start: "top 80%",
-          end: "bottom 10%",
+          start: "top 90%",
+          end: "bottom -40%",
           toggleActions: "restart reset restart reset",
           marker: true,
         },
